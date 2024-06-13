@@ -20,7 +20,7 @@ function checkGuess() {
     document.getElementById("checkButton").disabled = true;
   }
   else {
-    let hintItem = (userValue > randomNum ? "greater than" : "less than");
+    let hintItem = (userValue > randomNum ? "greater " : "less ");
     hint.innerHTML = "Your number is " + hintItem + " then random number.";count++;
     userValue=null;
   }
