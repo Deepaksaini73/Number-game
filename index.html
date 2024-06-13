@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="Number GameCss.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title> Number picker game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class="content">
-        
-        <div class="calculator">
-            <h1 class="toptext">Enter a Number (1-100) <br> <span> <img src="light-bulb.png" alt=""> Hint ! </span></h1>
+  <div class="content">
 
-            <div class="input">
-                <input type="number" id="number" placeholder="Enter a number">
-                <button onclick=clik() id="btn" > Try your Luck !</button>
-            </div>
-            <p id="result"> Your score is <span>98</span></p>
-        </div>
-    </div>
-    <script src="Number Game css.js"></script>
+      <div class="calculator">
+          <h1 id="toptext">Enter a Number (1-100) <br> <span > <img src="img/light-bulb.png" alt=""> <p id="hint">Hint !</p>  </span></h1>
 
+          <div class="input">
+              <input type="number" id="number" placeholder="Enter a number">
+              <button onclick=checkGuess() id="checkButton"> Try your Luck !</button>
+          </div>
+          <p id="score"> </p>
+      </div>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
