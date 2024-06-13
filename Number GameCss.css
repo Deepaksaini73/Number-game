@@ -1,0 +1,115 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.content {
+    background: linear-gradient(135deg,#962E2A, #E3867D, #CEE6F2);
+    color: white;
+    font-size: large;
+    width: 100%;
+    min-height: 100vh;
+    padding: 12px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.calculator h1 {
+    font-size: 40px;
+}
+
+.input {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.input input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.input button {
+    background-color: yellow;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calculator h1 span {
+    color: yellow;
+}
+
+.calculator h1 span img {
+    width: 40px;
+    margin-top: 20px;
+}
+
+#score {
+    margin-top: 50px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+    color: yellow;
+}
+
+#score span {
+    font-size: 60px;
+    color: red;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width:750px) {
+
+    .calculator {
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .input input {
+        margin-right: 20px;
+        padding: 5px 10px;
+        border: 0;
+        outline: 0;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    #score {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    #score span {
+        font-size: 25px;
+    }
+
+}
